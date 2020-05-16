@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:100,200,300,40,500,600,700,800|OpenSans:100,200,300,400,500,600,700,800');
 
-/*code to stop default styling, it is a wildcard so will apply to everything*/
+/*code to stop default styling in the body tag*/
 
-*{
+body{
     margin:0;
     padding:0;
     list-style:none;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'DM+MONO', sans-serif;
 }
 
 /*header*/
@@ -17,7 +17,7 @@
   text-align: center;
   background: #1abc9c;
   color: white;
-  font-size: 6px;
+  font-size: 12px;
   font-family: 'DM+Mono';
 }
 
@@ -30,7 +30,7 @@
     display:table-cell;
     vertical-align: middle;
     font-family: 'DM+Mono';
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
@@ -60,34 +60,25 @@ nav li a {
 nav li a:hover {
   background-color: whitesmoke;
   color: rgb(8, 175, 167);
+}
 
+/*main container*/
+.main-container{
+   background: url(../images/pose.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-/*trying to get an image to cover the whole of this section..unsucessfully :(*/
-.section {
-  position: absolute;
-  top: 0;
-  left:0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  background-repeat: no-repeat;
-  background: #0e0e0e;
-  display: flex;
-  justify-content: center;
+  display:flex;
   align-items: center;
+  justify-content:center;
+    font-family: 'DM+Mono';
+     text-align: center;
+     font-size: 10px;
+      color: white;
+    
 }
-
-.img {
-  width: 100%;
-  object-fit: contain;
-}
-
-
-}
-.container1 {
-    min-height: 10em;
-    display: table-cell;
-    vertical-align: middle }
 
 
 
