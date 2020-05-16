@@ -7,6 +7,7 @@
     padding:0;
     list-style:none;
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*header*/
@@ -33,19 +34,21 @@
 }
 
 
-ul {
+nav ul {
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(8, 175, 167);
+  
 }
 
-li {
-  float: left;
+nav li {
+  display:inline-block;
 }
 
-li a {
+nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -54,8 +57,9 @@ li a {
   font-family: 'DM+Mono';
 }
 
-li a:hover {
-  background-color: rgb(164, 157, 231);
+nav li a:hover {
+  background-color: whitesmoke;
+  color: rgb(8, 175, 167);
 
 
 /*trying to get an image to cover the whole of this section..unsucessfully :(*/
