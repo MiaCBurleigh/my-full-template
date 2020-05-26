@@ -2,12 +2,14 @@
 
 /*code to stop default styling in the body tag*/
 
-body{
+
+.main-body{
     margin:0;
     padding:0;
     list-style:none;
     text-decoration: none;
     font-family: 'DM+MONO', sans-serif;
+    
 }
 
 /*header*/
@@ -77,6 +79,7 @@ nav li a:hover {
 }
 
 /*main container on home page*/
+
 .main-container-home-page{
    background: url(../images/pose2.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
@@ -84,6 +87,7 @@ nav li a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 .home-page-title {
   display:flex;
@@ -117,43 +121,153 @@ nav li a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+   
 }
 
- .about-section-class-types{
-     position: absolute;
-    top: 200px;
+
+
+.about-section-schedule-and-services{
+      position: absolute;
+    top: 20%;
   left: 16px;
+  margin:auto;
+  height:33%;
+  clear:both;
+  width:100%;
+  padding:20px;
+   float:left;
+   display: flex;
+  justify-content: space-between;
+
+ }
+
+/*.about-section-schedule-and-services-image  {
+float: right;    
+ margin: 0 0 0 15px;
+}*//*************************************Comented out because it didn't work here is the instructions 
+https://www.hostpapa.co.uk/knowledgebase/align-float-images-website/   */
+
+
+
+  .about-section-Tammys-training{
+     position: absolute;
+    top: 60%;
+  left: 16px;
+  margin:auto;
+  height:33%;
+  clear:both;
+  width:100%;
+  padding:20px;
+   float:left;
+   display: flex;
+  justify-content: space-between;
+ }
+
+ .about-section-testimonials{
+     position: absolute;
+    top: 100%;
+  left: 16px;
+  margin:auto;
+  height:33%;
+  clear:both;
+  width:100%;
+  padding:20px;
+   float:left;
+   display: flex;
+  justify-content: space-between;
   
  }
-
- .about-section-class-schedule{
-      position: absolute;
-    top: 450px;
-  left: 16px;
-
- }
-
- .about-section-Tammys-training{
-     position: absolute;
-    top: 650px;
-  left: 16px;
- }
+ 
  
  .headings-about-page{
-      font-family: "DM+MONO", sans-serif;
+      font-family: "Roboto Mono", sans-serif;
     font-weight: 300;
+    font-size: 30px;
     color: rgb(42, 43, 46);
 
  }
 
  .paragraphs-about-page {
      font-family: "Roboto Mono";
-     font-weight: 200;
-     font-size: 16px;
+     font-weight: 100;
+     font-size: 24px;
+     font-style: italic;
+     text-align:justify;
      color: rgb(42, 43, 46);
 
  }
+
+ /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
+ @media screen and (max-width: 800px) {
+ .paragraphs-about-page {
+    font-size: 10px;
+  }
+@media screen and (min-width: 601px) {
+.paragraphs-about-page {
+    font-size: 24px;
+  }
+}
+
+}
+
+/**************************Contact page************************************************************/
+
+.main-container-contact-page{
+   background: url(../images/sea-background.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+}
+
+.contact-page-description{
+display:flex;
+  align-items: center;
+  justify-content:center;
+    font-family: 'Roboto Mono';
+    font-style: italic;
+     text-align: center;
+     font-size: 28px;
+      color: rgb(41, 40, 36);
+      bottom: 0px;
+
+}
+
+
+ /**************************practice for text and image divs************************************************************/
+.text-image-container {
+    width:600px;
+    float:left;
+    color: rgb(125, 194, 159)
+}
+
+.left-text {
+    box-sizing:border-box;
+    width:400px;
+    height:200px;
+    float:left;
+    text-align:center;
+    display:flex;
+    flex:1 1 0;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+   
+}
+.right-image {
+    box-sizing:border-box;
+    width:200px;
+    float:left;
+   
+}
+.right img {
+    width:200px;
+    height:200px;
+    
+}
+
 
 
  /**************************this part gets the footer to stay at the bottm of the page************************************************************/
@@ -161,7 +275,7 @@ nav li a:hover {
 .container1 {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 120vh;          /*****************************this makes the window bigger so more content can fit on a page*******************************/
 }
 
 
@@ -196,5 +310,7 @@ footer {
 main {
   flex: 1 0 auto;
 }
+
+
 
 /***********************************************************************************************************************************************/
